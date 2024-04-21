@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/animLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/premiumBtn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="10dp"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/waveLoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:letterSpacing="0.04"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/_21ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/premiumBtn" />
+
+        <!--        <me.itangqi.waveloadingview.WaveLoadingView-->
+        <!--            android:id="@+id/waveLoadingView"-->
+        <!--            android:layout_width="@dimen/_70sdp"-->
+        <!--            android:layout_height="@dimen/_70sdp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/premiumBtn"-->
+        <!--            app:wlv_borderColor="@color/white"-->
+        <!--            app:wlv_borderWidth="0dp"-->
+        <!--            app:wlv_progressValue="40"-->
+        <!--            app:wlv_round_rectangle="true"-->
+        <!--            app:wlv_shapeType="circle"-->
+        <!--            app:wlv_titleCenterColor="@android:color/white"-->
+        <!--            app:wlv_titleCenterSize="14sp"-->
+        <!--            app:wlv_titleCenterStrokeWidth="3dp"-->
+        <!--            app:wlv_triangle_direction="north"-->
+        <!--            app:wlv_waveAmplitude="70"-->
+        <!--            app:wlv_waveColor="@color/green_new" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/waveLoadingView"
+            app:layout_constraintEnd_toEndOf="@id/waveLoadingView"
+            app:layout_constraintStart_toStartOf="@id/waveLoadingView"
+            app:layout_constraintTop_toTopOf="@id/waveLoadingView">
+
+
+            <TextView
+                android:id="@+id/batteryPercentTx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/battery_charging"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/waveLoadingView"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/waveLoadingView"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/waveLoadingView"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/waveLoadingView"/>-->
+
+        <TextView
+            android:id="@+id/batterRemainTx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:lineSpacingMultiplier="1.2"
+            android:text="Battery Remaining"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintTop_toBottomOf="@id/waveLoadingView" />
+
+        <TextView
+            android:id="@+id/allChargingTx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="start"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="@dimen/_10sdp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="all_charging_animations"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintTop_toBottomOf="@id/batterRemainTx" />
+
+        <TextView
+            android:id="@+id/seeMoreTx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:letterSpacing="0.02"
+            android:lineSpacingMultiplier="1.2"
+            android:text="see_more"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/allChargingTx"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/allChargingTx" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animLayout"
+        app:spanCount="2"
+        tools:listitem="@layout/view_customize_video_layout" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/centerAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/appColor"
+        app:layout_constraintBottom_toBottomOf="@id/recycleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recycleView"
+        app:trackColor="@color/white"
+        app:trackThickness="@dimen/_2sdp" />
+    <!--
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loaderAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:indicatorColor="@color/appColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:trackColor="@color/white"
+            app:trackThickness="@dimen/_2sdp" />-->
+
+    <View
+        android:id="@+id/unlockBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/unlock_view"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

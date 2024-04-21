@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/homeFragment"
+        android:icon="@drawable/nav_theme_selector"
+        android:title="@string/home" />
+
+    <item
+        android:id="@id/downloadFragment"
+        android:icon="@drawable/nav_download_selector"
+        android:title="@string/download" />
+<!--    <item-->
+<!--        android:id="@id/settingFragment"-->
+<!--        android:icon="@drawable/nav_setting_selector"-->
+<!--        android:title="@string/setting" />-->
+</menu>

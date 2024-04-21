@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="grey">#828282</color>
+    <color name="greyLight">#F3F3F3</color>
+    <color name="stroke_black">#2E2E2E</color>
+    <color name="bg_color1">#121212</color>
+    <color name="bg_color_half">#A11C1C1D</color>
+    <color name="bg_color2">#252525</color>
+    <color name="green_new">#00FF84</color>
+
+    <color name="appColor">#2E8EFF</color>
+
+    <color name="bg_color">#0A0D16</color>
+    <color name="itemBG">#29293A</color>
+    <color name="adsBgColor">#242631</color>
+    <color name="seeMoreColor">#00A3FF</color>
+    <color name="settingLineColor">#384E73</color>
+    <color name="dialogBg">#131931</color>
+    <color name="startColor">#00A3FF</color>
+    <color name="endColor">#4249FF</color>
+</resources>
